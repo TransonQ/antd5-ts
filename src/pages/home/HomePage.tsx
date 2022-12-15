@@ -1,6 +1,5 @@
+import styles from './styles.module.scss'
 
 export const HomePage = () => {
-  return (
-    <div>home</div>
-  )
+  return <div className={styles.test}>home</div>
 }
