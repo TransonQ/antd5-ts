@@ -1,9 +1,5 @@
-import { Layout, Menu, MenuProps, theme } from 'antd'
-
-const items1: MenuProps['items'] = ['1', '2', '3'].map((key) => ({
-  key,
-  label: `nav ${key}`,
-}))
+import { Layout, theme } from 'antd'
+import styles from './styles.module.scss'
 
 export const Header = () => {
   const {
@@ -11,14 +7,12 @@ export const Header = () => {
   } = theme.useToken()
 
   return (
-    <Layout.Header style={{ background: colorBgContainer, paddingInline: 0 }}>
-      <div className="logo" />
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['2']}
-        items={items1}
-      />
+    <Layout.Header
+      className={styles.header}
+      style={{ background: colorBgContainer }}
+    >
+      <div className={styles['header-logo']} />
+      123
     </Layout.Header>
   )
 }
