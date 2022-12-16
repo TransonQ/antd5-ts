@@ -4,8 +4,8 @@
 
 .header {
   padding: 0 !important;
-  border-bottom: 1px solid black;
-
+  &-box {
+  }
   &-logo {
     float: left;
     width: 120px;
