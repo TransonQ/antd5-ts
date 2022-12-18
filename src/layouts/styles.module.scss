@@ -3,9 +3,12 @@
 }
 
 .header {
-  padding: 0 !important;
   &-box {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
   }
+
   &-logo {
     float: left;
     width: 120px;
@@ -13,4 +16,5 @@
     margin: 16px 24px 16px 0;
     background-color: cyan;
   }
+ 
 }
